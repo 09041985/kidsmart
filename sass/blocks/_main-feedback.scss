@@ -1,0 +1,126 @@
+.block_main-feedback {
+
+	.backdrop {
+		height: 100px;
+		background: url("../img/backdrop-2.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media #{$tablets} {
+			height: 171px;
+		}
+	}
+
+	.feedback-col {
+		@include clearfix();
+		position: relative;
+		margin-top: -43px;
+
+		.col {
+			text-align: center;
+			margin-top: 30px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			@media #{$tablets} {
+				float: left;
+				width: 31%;
+				margin-left: 2.5%;
+				margin-top: 0;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+
+			img {
+				margin: 0 auto 20px;
+			}
+
+			.text {
+				font-size: 14px;
+				line-height: 1.4;
+			}
+
+			.status {
+				font-size: 16px;
+				font-family: "Muller-Bold";
+			}
+
+			&.col-1 {
+				.status {
+					color: $color-4;
+				}
+			}
+			&.col-2 {
+				.status {
+					color: $color-1;
+				}
+			}
+			&.col-3 {
+				.status {
+					color: $color-2;
+				}
+			}
+		}
+	}
+
+	.feedback-action {
+		text-align: center;
+		margin-top: 10px;
+
+		@media #{$tablets} {
+			margin-top: 40px;
+		}
+
+		.icon-next-2 {
+			left: 3px;
+			top: 2px;
+			position: relative;
+		}
+
+		.col {
+
+
+			@media #{$tablets} {
+				width: 100%;
+				max-width: 241px;
+				display: inline-block;
+			}
+		}
+		.col-1 {
+			.bl-circle .iner > div {
+				background: $color-4;
+
+				span {
+					font-size: 30px;
+				}
+			}
+			.rectangle {
+				background: $color-4;
+			}
+		}
+		.col-2 {
+			margin-top: 20px;
+
+			@media #{$tablets} {
+				margin-left: 46px;
+				margin-top: 0;
+			}
+
+			.bl-circle .iner > div {
+				background: $color-2;
+
+				span {
+					font-size: 24px;
+				}
+			}
+			.rectangle {
+				background: $color-2;
+			}
+		}
+	}
+}

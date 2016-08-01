@@ -1,0 +1,445 @@
+.block_profile {
+	.backdrop {
+		background-image: url("../img/baner-profile.jpg");
+		margin-bottom: -87px;
+	}
+
+	.main-title-block {
+    	padding: 25px 0 5px;
+
+		@media #{$tablets} {
+			padding: 37px 0 4px;
+		}
+
+		h2 {
+		   font-size: 24px;
+	   }
+	   h3 {
+		   margin-bottom: 19px;
+	   }
+	}
+
+	.custom-container-small {
+		overflow: hidden;
+	}
+
+	.type {
+		position: relative;
+		margin-top: 53px;
+
+		&.type-1 {
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
+			width: 220px;
+			height: 170px;
+			margin-bottom: 64px;
+			background: $color-3;
+
+			@media #{$tablets} {
+				width: auto;
+			}
+
+			.bl-round span {
+				border-radius: 100%;
+				background: $color-3;
+			}
+
+			.triangle-bottom {
+				border-width: 64px 110px 0 110px;
+			    border-color: $color-3 transparent transparent transparent;
+
+				@media #{$tablets} {
+					border-width: 64px 105px 0 105px;
+				}
+
+				@media #{$desktops} {
+					border-width: 64px 118px 0 118px;
+				}
+			}
+		}
+
+		&.type-2 {
+			width: 220px;
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
+			background: $color-2;
+
+			@media #{$tablets} {
+				width: auto;
+			}
+
+			.bl-round span {
+				border-radius: 100%;
+				background: $color-2;
+			}
+		}
+	}
+
+	.bl-corner-unit {
+
+		h6 {
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			margin-top: 65px;
+			font-family: "Muller-Bold";
+		}
+
+		p {
+			margin: 0;
+		}
+
+		span {
+			display: block;
+			font-size: 14px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 8px;
+		}
+
+		.field {
+			max-width: 80%;
+			margin: 0 auto 20px;
+			width: 100%;
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 8px 4px;
+			border: none;
+			outline: none;
+			background: #fff;
+			border-radius: 0;
+			-webkit-appearance: caret;
+			-moz-appearance: caret;
+		}
+	}
+
+	.triangle-bottom {
+			border-width: 64px 118px 0 118px;
+
+			@media #{$tablets} {
+				border-width: 64px 105px 0 105px;
+			}
+
+			@media #{$desktops} {
+				border-width: 64px 118px 0 118px;
+			}
+	}
+
+	.continue {
+		text-align: center;
+
+		.item {
+			display: inline-block;
+			margin-left: 10px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		h4 {
+			font-size: 16px;
+			margin: 0;
+			padding: 10px 0;
+			font-family: "Muller-Bold";
+			text-transform: uppercase;
+		}
+
+		p {
+			margin: 4px 0 8px 0;
+			font-size: 12px;
+			font-family: "Muller-Bold";
+		}
+
+		.bl-round {
+			position: static;
+			width: 54px;
+			height: 54px;
+			border: none;
+			margin: 0;
+
+			&.red    { background: $color-4; }
+			&.blue   { background: $color-3; }
+			&.green  { background: $color-1; }
+			&.yellow { background: $color-2; }
+			&.grey   { background: $color-font; }
+
+
+			span {
+				font-size: 32px;
+			}
+		}
+	}
+
+	.user-info {
+		background: #9A9A9A;
+		margin-top: 53px;
+		color: #fff;
+		padding: 15px;
+
+		@media #{$tablets} {
+			padding: 27px 34px 31px;
+		}
+
+		.top {
+			@include clearfix();
+		}
+		.photo {
+			@media #{$tablets} {
+				float: left;
+				width: 50%;
+			}
+
+			img {
+				border: 6px solid #fff;
+			    border-radius: 100%;
+			    overflow: hidden;
+			    width: 100%;
+			    max-width: 188px;
+			}
+		}
+
+		.info {
+		    padding-left: 14px;
+
+			@media #{$tablets} {
+				float: right;
+				width: 50%;
+			}
+		}
+		.name {
+			display: block;
+			padding: 13px 0 0px;
+		    font-size: 24px;
+		    text-transform: uppercase;
+		    font-family: "Muller-Bold";
+		    line-height: 1.2;
+		}
+		.childs {
+			display: block;
+			font-size: 14px;
+		}
+
+		.location {
+			margin: 25px 0 0 0;
+			padding-left: 40px;
+			font-size: 14px;
+			line-height: 1.4;
+			position: relative;
+
+			span {
+				font-size: 12px;
+				display: block;
+			}
+
+			i {
+				position: absolute;
+				font-size: 29px;
+			    left: 0;
+			    top: 4px;
+			}
+		}
+
+
+		.bottom {
+			margin-top: 17px;
+			padding-left: 20px;
+
+			.line {
+				@include clearfix();
+
+				& + .line {
+					@media #{$tablets} {
+						margin-top: 13px;
+					}
+				}
+			}
+
+			.item {
+				display: table;
+				height: 40px;
+				position: relative;
+
+				@media #{$tablets} {
+					width: 50%;
+					float: left;
+				}
+			}
+
+			i {
+				position: absolute;
+			    left: -11px;
+			    top: 50%;
+			    font-size: 29px;
+			    margin-top: -14px;
+			}
+
+			.link {
+				display: table-cell;
+				vertical-align: middle;
+				padding-left: 30px;
+				font-size: 14px;
+
+				a,
+				span {
+					color: #fff;
+					line-height: 1;
+				}
+				b {
+					display: block;
+					font-size: 12px;
+					font-family: "Muller-bold";
+				}
+			}
+		}
+
+	}
+
+	.archive {
+		.block {
+			@include clearfix();
+			position: relative;
+			font-size: 14px;
+		}
+
+		b {
+			font-family: "Muller-Bold";
+			margin-right: 10px;
+		}
+		.more {
+			font-family: "Muller-bold";
+			text-transform: uppercase;
+			color: $color-font;
+
+			@media #{$tablets} {
+				position: absolute;
+				bottom: 0;
+				left: calc(50% + 15px);
+			}
+		}
+	}
+	.iner-columns {
+		@include clearfix();
+
+		.col {
+			padding: 0;
+			text-align: left;
+
+
+			& > div {
+				padding: 1px 0;
+			}
+
+			@media #{$tablets} {
+				width: calc(50% - 15px);
+				float: left;
+				margin-left: 30px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	.steps {
+		position: relative;
+		margin-left: -8px;
+		margin-top: 33px;
+
+		.step {
+			&.step-1 {
+				margin-bottom: 20px;
+
+				@media #{$tablets} {
+
+				}
+
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-1;
+				}
+			}
+			&.step-2 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-4;
+				}
+				.bl-circle {
+					border-radius: 34px;
+				}
+			}
+			&.step-3 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-3;
+				}
+				.bl-circle {
+					border-radius: 34px;
+				}
+			}
+		}
+
+		.add {
+
+			margin-top: 10px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.ask {
+		background: #9A9A9A;
+		color: #fff;
+		padding: 30px 20px 30px!important;
+
+		h6 {
+			font-family: "Muller-Bold";
+			font-size: 14px;
+		}
+	}
+
+	input[type=checkbox].css-checkbox {
+		position: absolute;
+		z-index: -1000;
+		left: -1000px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		padding: 0;
+		border: 0;
+	}
+
+	input[type=checkbox].css-checkbox + label.css-label {
+		padding-left: 24px;
+		height: 10px;
+		display: inline-block;
+		line-height: 11px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		font-size: 14px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+	input[type=checkbox].css-checkbox:checked + label.css-label {
+	    background-position: 0 -10px;
+	}
+	label.css-label {
+		background-image:url(../img/checkbox-sprite.png);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-size: 10px;
+	}
+}

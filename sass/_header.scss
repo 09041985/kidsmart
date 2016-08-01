@@ -1,0 +1,89 @@
+.header {
+	padding: 9px 0;
+	background: $color-1;
+	color: #fff;
+
+	.container {
+		@include clearfix();
+	}
+
+	.header-nav {
+
+		@media #{$tablets} {
+			float: left;
+		}
+ 
+		a {
+			color: #fff;
+			font-size: 12px;
+			font-family: "Muller-Black";
+			text-transform: uppercase;
+			text-align: center;
+			display: block;
+			margin-top: 6px;
+
+			&:first-child {
+				margin-left: 0;
+				margin-top: 0;
+			}
+
+			@media #{$tablets} {
+				margin-left: 44px;
+				display: inline;
+				margin-top: 0
+			}
+		}
+	}
+
+	.right {
+
+		@media #{$tablets} {
+			float: right;
+		}
+		.login {
+			display: block;
+			text-align: center;
+			color: #fff;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-family: "Muller-Black";
+			margin-top: 6px;
+
+			@media #{$tablets} {
+				display: inline-block;
+				margin-right: 39px;
+				margin-top: 0;
+			}
+		}
+		.lang {
+			display: block;
+			text-align: center;
+			@media #{$tablets} {
+				display: inline-block;
+			}
+			a {
+				font-family: "Muller-Bold";
+				color: #fff;
+				font-size: 12px;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin-left: 20px;
+
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				i {
+					font-size: 10px;
+					position: relative;
+					top: 1px;
+				}
+			}
+		}
+	}
+
+	@media #{$tablets} {}
+	@media #{$desktops} {}
+	@media #{$large-desktops} {}
+}

@@ -1,0 +1,87 @@
+.block_lastnews {
+	.backdrop {
+		background-image: url("../img/baner-lastnews.jpg");
+	}
+
+	.custom-container-small {
+		overflow: hidden;
+	}
+
+	.news {
+		@include clearfix();
+		margin: 0 -15px;
+
+		.col {
+			padding: 20px 15px;
+
+			@media #{$tablets} {
+				width: 33.333%;
+			}
+		}
+
+		.col-wr {
+			@media #{$tablets} {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-content: flex-start;
+				align-items: stretch;
+
+				.col.col-1 {
+					width: 66.666%;
+				}
+			}
+
+
+		}
+
+		.text {
+			font-size: 14px;
+		}
+
+		.picture {
+			position: relative;
+
+			img {
+				width: 100%;
+			}
+
+			.ribbon {
+				height: 32px;
+				width: 80%;
+				max-width: 230px;
+				bottom: 20px;
+				position: absolute;
+
+				@media #{$tablets} {
+					width: 70%;
+				}
+			}
+		}
+
+		.cont {
+			.text {
+				padding: 12px 0;
+				margin: 0;
+			}
+		}
+
+		.media {
+			@include clearfix();
+			font-family: "Muller-Bold";
+			margin: 0;
+			font-size: 14px;
+
+			.date {
+				float: left;
+			}
+
+			.link {
+				float: right;
+				color: $color-font;
+			}
+		}
+	}
+
+}

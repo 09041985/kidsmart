@@ -1,0 +1,73 @@
+.block_main-steps {
+	padding-bottom: 16px;
+	padding-right: 15px;
+
+	@media #{$tablets} {
+		overflow-x: hidden;
+		padding-bottom: 0;		
+	}
+
+	.text {
+		margin: 0;
+		text-align: center;
+		font-size: 14px;
+		padding: 20px 0 24px;
+
+		@media #{$tablets} {
+			padding: 50px 0 56px;
+		}
+	}
+
+	.steps {
+		@include clearfix();
+
+		@media #{$tablets} {
+			margin: 0 -11px;
+			height: 73px;
+		}
+
+		.step {
+			position: relative;
+			margin-top: 20px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			@media #{$tablets} {
+				width: 25%;
+				float: left;
+				padding: 0 5px;
+				margin-top: 0;
+			}
+
+			&.step-1 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-2;
+				}
+			}
+			&.step-2 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-3;
+				}
+			}
+			&.step-3 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-4;
+				}
+			}
+			&.step-4 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-1;
+				}
+				.icon-arrow-down {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}

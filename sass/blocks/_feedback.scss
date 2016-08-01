@@ -1,0 +1,76 @@
+.block_feedback {
+	.backdrop {
+		background-image: url("../img/baner-feedback.jpg");
+	}
+
+	.custom-container-med {
+		padding: 0;
+
+		@media #{$tablets} {
+			padding: 0 15px;
+		}
+	}
+
+	.feedback {
+		@include clearfix();
+
+		.col {
+			@media #{$tablets} {
+				width: 48%;
+				float: left;
+				margin-left: 4%;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+
+		.item {
+			@include clearfix();
+			margin-top: 20px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			.avatar {
+				width: 80px;
+				float: left;
+
+				@media #{$tablets} {
+					width: 100px;
+				}
+				@media #{$desktops} {
+					width: 133px;
+				}
+			}
+			.text {
+				padding-left: 100px;
+				font-size: 14px;
+
+				@media #{$tablets} {
+					padding-left: 30px;
+					width: calc(100% - 100px);
+					float: right;
+				}
+				@media #{$desktops} {
+					width: calc(100% - 133px);
+					float: right;
+				}
+			}
+
+			.status {
+				display: block;
+				text-align: right;
+				font-family: "Muller-Bold";
+				font-size: 16px;
+
+				&.red    { color: $color-4; }
+				&.blue   { color: $color-3; }
+				&.green  { color: $color-1; }
+				&.yellow { color: $color-2; }
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.block_main-baner {
+	overflow: hidden;
+	.container {
+		padding: 0;
+		height: 300px;
+		background: url(../img/baner-1.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media #{$tablets} {
+			height: 551px;
+			padding: 0 15px;
+		}
+	}
+
+	.content {
+		position: relative;
+		padding: 15px;
+
+		@media #{$tablets} {
+			padding: 0;
+			top:  calc((120/551)*100%);
+			left: calc((40/551)*100%);
+		}
+
+		h3 {
+			font-size: 14px;
+			margin: 0;
+			max-width: 200px;
+			text-transform: uppercase;
+			margin-top: 6px;
+
+			@media #{$desktops} {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.logo {
+
+		@media #{$tablets} {
+			max-width: 100%;
+			width:calc((364/1024)*100%);
+		}
+	}
+
+
+	@media #{$desktops} {}
+	@media #{$large-desktops} {}
+}

@@ -1,0 +1,122 @@
+.block_main-fit-newsletter {
+	padding-bottom: 123px;
+
+	.backdrop {
+		height: 100px;
+		background: url("../img/backdrop-1.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media #{$tablets} {
+			height: 152px;
+		}
+	}
+
+	.types {
+		@include clearfix();
+		width: 220px;
+		margin: 0 auto;
+
+		@media #{$tablets} {
+			margin-top: 31px;
+			width: auto;
+		}
+
+		.type {
+			width: 220px;
+			margin: 0 auto;
+			position: relative;
+			margin-top: 200px;
+
+			@media #{$tablets} {
+				float: left;
+				width: 30%;
+				margin-left: 5%;
+				position: relative;
+				margin-top: 0;
+			}
+
+			.bl-corner-unit {
+				p {
+					margin: 64px 0 0;
+					font-size: 15px;
+				}
+				.triangle-bottom {
+					border-width: 64px 110px 0 110px;
+
+					@media #{$tablets} {
+						border-width: 64px 103px 0 103px;
+					}
+					@media #{$desktops} {
+						border-width: 64px 115px 0 115px;
+					}
+				}
+			}
+
+
+
+			&:first-child {
+				margin-left: 0;
+				margin-top: 0;
+			}
+
+			&.type-1 {
+				height: 90px;
+				background: $color-1;
+
+				.bl-round {
+					background: $color-1;
+				}
+				.bl-corner-unit {
+					.triangle-bottom {
+						border-color: $color-1 transparent transparent transparent;
+					}
+				}
+			}
+
+			&.type-2 {
+				height: 138px;
+				background: $color-3;
+
+				.bl-round {
+					background: $color-3;
+				}
+				.bl-corner-unit {
+					.triangle-bottom {
+						border-color: $color-3 transparent transparent transparent;
+					}
+				}
+			}
+
+			&.type-3 {
+				height: 161px;
+				background: $color-4;
+
+				.bl-round {
+					background: $color-4;
+				}
+				.bl-corner-unit {
+					.triangle-bottom {
+						border-color: $color-4 transparent transparent transparent;
+					}
+				}
+			}
+
+
+			.cost {
+				margin-top: 69px;
+				text-align: center;
+				font-family: "Muller-Black";
+
+				b {
+					font-size: 30px;
+					line-height: 1;
+				}
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.footer {
+	padding: 20px 0;
+	background: $color-1;
+	color: #fff;
+	text-align: center;
+
+	.left {
+		color: #fff;
+
+		@media #{$tablets} {
+			text-align: left;
+		}
+
+		i {
+			font-size: 32px;
+			margin-right: 4px;
+		}
+
+		@media #{$tablets} {
+			float: left;
+		}
+	}
+	.socials {
+		margin-top: 6px;
+
+		@media #{$tablets} {
+			float: right;
+		}
+
+		a {
+			font-size: 30px;
+			color: #fff;
+		}
+	}
+} 

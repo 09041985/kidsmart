@@ -1,0 +1,54 @@
+.block_main-useful-video {
+
+	.content {
+		@include clearfix();
+	}
+
+	.col {
+		margin-top: 20px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		@media #{$tablets} {
+			float: left;
+			width: 31%;
+			margin-left: 3.5%;
+			margin-top: 0;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		&.col-1 {
+			.play-btn {
+				background: $color-3;
+			}
+		}
+		&.col-2 {
+			.play-btn {
+				background: $color-1;
+			}
+		}
+	}
+	.bl-tile {
+		background: $color-4;
+		margin: 0;
+
+		i {
+			color: #fff;
+			font-size: 105px;
+		}
+
+		@media #{$tablets} {
+			height: 168px;
+			margin-top: 0;
+		}
+		@media #{$desktops} {
+			height: 202px;
+			margin-top: 0;
+		}
+	}
+}

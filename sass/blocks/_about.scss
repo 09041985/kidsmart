@@ -1,0 +1,283 @@
+.block_about {
+	.backdrop {
+		background-image: url("../img/baner-about.jpg");	
+	}
+
+	.main-title-block {
+		h4 {
+			font-size: 16px;
+			margin: 25px 0 0;
+			line-height: 1.4;
+
+			@media #{$tablets} {
+				font-size: 20px;
+				margin: 52px 0 0;
+			}
+			b {
+				margin-top: 10px;
+				display: block;
+				font-family: "Muller-Bold";
+			}
+		}
+	}
+
+	.text-bg {
+		padding: 15px;
+		background: $color-1;
+		color: #fff;
+		position: relative;
+		margin-top: 7px;
+		font-size: 14px;
+
+		&:before {
+			content: "";
+			display: block;
+			height: 1px;
+			width: 100%;
+			position: absolute;
+			top: -10px;
+			background: #000;
+			left: 0;
+			right: 0;
+		}
+
+		@media #{$tablets} {
+			padding: 30px 32px 35px;
+			margin-bottom: 50px;
+			font-size: 17px;
+		}
+	}
+
+	.text-block {
+		font-size: 16px;
+
+		& + .text-block {
+			margin-top: 10px;
+
+			@media #{$tablets} {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.main-title-block.category {
+		padding-bottom: 9px;
+	}
+	.steps.age {
+		@include clearfix();
+		padding-bottom: 30px;
+
+		@media #{$tablets} {
+			padding-bottom: 60px;
+
+			.step {
+				width: 48%;
+				float: left;
+				margin-left: 4%;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+
+		.rectangle > div span {
+			font-size: 16px;
+		}
+
+		.step-1 {
+			margin-bottom: 25px;
+
+			@media #{$tablets} {
+				margin-bottom: 0;
+			}
+
+			.bl-circle .iner > div,
+			.rectangle {
+				background: $color-3;
+			}
+		}
+
+		.step-2 {
+			.bl-circle .iner > div,
+			.rectangle {
+				background: $color-4;
+			}
+		}
+	}
+
+	// step why
+	.steps.why {
+		padding-bottom: 30px;
+
+		@media #{$tablets} {
+			padding-bottom: 60px;
+
+			.step {
+				width: 50%;
+				float: left;
+				position: relative;
+			}
+		}
+
+		.line-1,
+		.line-2 {
+			@include clearfix();
+		}
+
+		.line-1 {
+			@media #{$tablets} {
+				margin-bottom: 30px;
+			}
+		}
+
+		.step {
+			margin-bottom: 15px;
+			@media #{$tablets} {
+				margin-bottom: 0;
+			}
+		}
+
+		.bl-circle {
+		    height: 96px;
+		    width: 96px;
+		    border-radius: 48px;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+
+			@media #{$tablets} {
+				border-radius: 48px;
+			}
+
+			.iner {
+			    height: 96px;
+			    width: 96px;
+			    padding: 8px;
+
+				& > div {
+				    height: 80px;
+				    width: 80px;
+				}
+			}
+		}
+
+		.rectangle {
+		    top: 8px;
+		    padding-left: 74px;
+		    margin-left: 11px;
+
+			& > div span {
+				font-size: 12px;
+				padding-right: 5px;
+				height: 80px;
+				padding-left: 30px;
+				font-family: "Muller-Regular";
+
+				@media #{$tablets} {
+					font-size: 14px;
+					padding-right: 30px;
+				}
+			}
+		}
+
+		.line-1 {
+			.step-1 {
+				.rectangle {
+
+					& > div span {
+						padding-left: 30px;
+					}
+				}
+				.bl-circle {
+				    border-top-left-radius: 0px;
+				    border-bottom-left-radius: 0px;
+				}
+			}
+		}
+		.line-1 {
+			.step-2 {
+				.bl-circle {
+					@media #{$tablets} {
+						left: -20px;
+					}
+				}
+				@media #{$tablets} {
+					.rectangle {
+						& > div span {
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+		}
+		.line-2 {
+			.step-1 {
+
+				@media #{$tablets} {
+					width: 40%;
+				}
+
+				.rectangle {
+					& > div span {
+						padding-left: 30px;
+					}
+				}
+				.bl-circle {
+				    border-top-left-radius: 0px;
+				    border-bottom-left-radius: 0px;
+				}
+			}
+		}
+		.line-2 {
+			.step-2 {
+				@media #{$tablets} {
+					width: 60%;
+				}
+
+				.bl-circle {
+					@media #{$tablets} {
+						left: -20px;
+					}
+				}
+				@media #{$tablets} {
+					.rectangle {
+						& > div span {
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		// colors
+		.line-1 {
+			.step-1 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-2;
+				}
+			}
+			.step-2 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-1;
+				}
+			}
+		}
+
+		.line-2 {
+			.step-1 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-4;
+				}
+			}
+			.step-2 {
+				.bl-circle .iner > div,
+				.rectangle {
+					background: $color-3;
+				}
+			}
+		}
+	}
+}

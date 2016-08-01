@@ -1,0 +1,28 @@
+.block_main-parners {
+	padding-bottom: 10px;
+
+	@media #{$tablets} {
+		padding-bottom: 50px;
+	}
+
+	.parners {
+		text-align: center;
+
+		.item {
+			display: block;
+
+			a {
+				display: inline-block;
+			}
+
+			@media #{$tablets} {
+				display: inline-block;
+				margin-left: 44px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

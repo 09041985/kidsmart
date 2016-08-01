@@ -1,0 +1,65 @@
+.block_main-last-news {
+
+	.content {
+		@include clearfix();		
+	}
+
+	.col-1 {
+		position: relative;
+
+		@media #{$tablets} {
+			width: 66%;
+			float: left;
+		}
+
+		.ribbon {
+			max-width: 250px;
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			background: $color-1;
+
+			&:after {
+				border-color: transparent transparent transparent $color-1;
+			}
+		}
+	}
+	.col-2 {
+		margin-top: 20px;
+
+		@media #{$tablets} {
+			width: 30.5%;
+			margin-left: 3.5%;
+			float: left;
+			margin-top: 0;
+		}
+
+		.top {
+			position: relative;
+		}
+
+		.bl-tile {
+			background: $color-2;
+		}
+
+		.ribbon {
+			max-width: 176px;
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			background: $color-3;
+
+			&:after {
+				border-color: transparent transparent transparent $color-3;
+			}
+		}
+	}
+	.col-1,
+	.col-2 {
+		img {
+			width: 100%;
+		}
+	}
+}
